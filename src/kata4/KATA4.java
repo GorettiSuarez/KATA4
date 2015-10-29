@@ -1,9 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package kata4;
+
+import java.io.File;
 
 /**
  *
@@ -11,11 +9,14 @@ package kata4;
  */
 public class KATA4 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        String pathName = "c:/";
+        File file = new File (pathName);
+        String [] dire = file.list();
+        for (String dire1 : dire) {
+            System.out.println(dire1);
+        }
     }
     
 }
